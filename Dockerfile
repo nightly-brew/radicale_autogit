@@ -6,7 +6,7 @@ ENV RADICALE_VERSION=${RADICALE_VERSION:-master}
 RUN mkdir -p "/etc/radicale/auth"
 RUN mkdir -p "/var/lib/radicale"
 
-VOLUME "/var/lib/radicale/collections"
+VOLUME "/var/lib/radicale"
 VOLUME "/etc/radicale/auth"
 
 COPY "radicale/config"  "/etc/radicale/config"
