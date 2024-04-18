@@ -1,5 +1,7 @@
 # Radicale autogit
 
+![](https://woodpeckerci.moonlit-room.org/api/badges/4/status.svg)
+
 Radicale autogit is a custom build of the radicale container image with builtin git autocommit of changes to collections.   
 It uses bcrypt for the credentials file, which can be mounted at `/etc/radicale/auth/credentials`.
 
