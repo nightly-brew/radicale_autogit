@@ -1,7 +1,7 @@
 FROM docker.io/library/python:3.12.5-alpine
 
-ARG RADICALE_VERSION
-ENV RADICALE_VERSION=${RADICALE_VERSION:-master}
+ARG RADICALE_VERSION=v3.1.8
+ENV RADICALE_VERSION=${RADICALE_VERSION}
 
 RUN mkdir -p "/etc/radicale/auth"
 RUN mkdir -p "/var/lib/radicale"

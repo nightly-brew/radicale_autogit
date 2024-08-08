@@ -10,8 +10,6 @@ steps:
   settings:
     repo: gitea.moonlit-room.org/nightly_brew/radicale_autogit
     platform: linux/amd64
-    build_args:
-      RADICALE_VERSION: "v3.1.8"
     tag: latest
     logins:
     - registry: https://gitea.moonlit-room.org

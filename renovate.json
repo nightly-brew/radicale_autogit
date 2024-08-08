@@ -3,6 +3,17 @@
   "extends": [
     "config:base"
   ],
+  "regexManagers": [
+    {
+      "fileMatch": ["Dockerfile$"],
+      "matchStrings": [
+        "ARG RADICALE_VERSION=v(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+?)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "Kozea/Radicale",
+      "extractVersionTemplate": "^v(?<version>.*)"
+    }
+  ],
   "packageRules": [
     {
       "description": "Automerge minor and patch updates",
