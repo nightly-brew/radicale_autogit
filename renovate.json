@@ -7,7 +7,7 @@
     {
       "fileMatch": ["Dockerfile$"],
       "matchStrings": [
-        "ARG RADICALE_VERSION=v(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+?)"
+        "ARG RADICALE_VERSION=v(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+.+)"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "Kozea/Radicale",
