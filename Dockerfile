@@ -1,4 +1,4 @@
-FROM docker.io/library/python:3.12.7-alpine
+FROM docker.io/library/python:3.13.0-alpine
 
 ARG RADICALE_VERSION=v3.2.2
 ENV RADICALE_VERSION=${RADICALE_VERSION}
