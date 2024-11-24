@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["Dockerfile$"],
+      "customType": "regex",
+      "fileMatch": [
+        "Dockerfile$"
+      ],
       "matchStrings": [
         "ARG RADICALE_VERSION=v(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+.+)"
       ],
@@ -17,7 +20,10 @@
   "packageRules": [
     {
       "description": "Automerge minor and patch updates",
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true,
       "ignoreTests": true
     }
