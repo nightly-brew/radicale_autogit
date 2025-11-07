@@ -6,8 +6,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "Dockerfile$"
+      "managerFilePatterns": [
+        "/Dockerfile$/"
       ],
       "matchStrings": [
         "ARG RADICALE_VERSION=v(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+.+)"
